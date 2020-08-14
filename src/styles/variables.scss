@@ -22,3 +22,28 @@ $base-margin: 20px;
   width: 150px;
   height: 150px;
 }
+
+.navigation {
+  background-color: $support-blue;
+  position: relative;
+  bottom: 80px;
+  height: 100px;
+}
+
+.shoppingCart {
+  position: relative;
+  left:550px;
+}
+
+.cartNumDecoration {
+  display: inline-block;
+  height:20px;
+  width:20px;
+  background-color: $support-red;
+  border-radius: 50%;
+}
+
+.cartNum {
+  color: $white;
+  padding: 5px;
+}

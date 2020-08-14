@@ -10,7 +10,8 @@ module.exports = {
     "plugin:react/recommended"
   ],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "off",
+    'react/prop-types': 'off',
   },
   "parserOptions": {
     "ecmaVersion": 2018,
