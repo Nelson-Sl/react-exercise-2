@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Product from './functionPart/product';
+import '../styles/productArea.scss';
 
-function BrandProduct(props) {
-  const { brandName, phoneData, addCart } = props;
+class BrandProduct extends Component {
+  state = {
+    currentBrand: '',
+  };
 
-  return (
-    <div className="brandProducts">
-      <h2>{brandName}</h2>
-      {phoneData.map((phone) => {
-        return <Product key={phone.name} phoneData={phone} addCart={addCart} />;
-      })}
-    </div>
-  );
+  setCurrentBand = (brandName) => {
+    this.setState({
+      currentBrand: brandName,
+    });
+  };
+
+  render() {
+    const { phoneData, brand, addCart } = this.props;
+    console.log(phoneData);
+    console.log(phoneData.length);
+    return brand.map((brandName) => {
+      return (
+        <div key={brandName} className="brandProduct">
+          <h2 className="brandTitle">{brandName}</h2>
+          <Product brand={brandName} phone={phoneData} addCart={addCart} />
+        </div>
+      );
+    });
+  }
 }
 
 export default BrandProduct;

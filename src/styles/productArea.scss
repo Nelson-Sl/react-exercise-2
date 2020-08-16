@@ -1,0 +1,49 @@
+$image-width: 150px;
+$image-height: 150px;
+
+.brandProduct{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 40px;
+}
+
+.brandTitle {
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.product {
+    display: flex;
+}
+
+.phoneInfo{
+    margin: 20px;
+}
+
+.phoneTitle {
+    margin-bottom: 10px;
+}
+
+.product img {
+    height: $image-height;
+    width: $image-width;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.phoneInfo span {
+    margin-right: 15px;
+}
+
+.phoneInfo button {
+    background-color:#096ee3;
+    color: white;
+    border: none;
+    height: 25px;
+    width: 90px;
+}
+
+.phoneInfo button:hover {
+    background-color: #40a9ff;
+}
